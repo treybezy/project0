@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SWAPI</title>
+  <style >
+    #sw-logo {
+      width: 500px;
+      height: 300px;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    button, input, select {
+      border-radius: 2px;
+    }
+
+    #alert-msg{
+      text-align: center;
+      font-weight: bold;
+      background: ##ffb3b3;
+      border: 1px;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+<body>
+
+    <div>
+      <h1>Star Wars API (Application Programming Interface)</h1>
+      <div id="sw-logo-container">
+        <img src="./assets/star-wars.png" id ="sw-logo" alt="">
+      </div>
+      <br>
+      <div id="sw-form">
+        <input type="number" id="sw-id" placeholder="Enter an ID number..."/>
+        <select id="sw-category">
+          <option value="">Please select a value</option>
+          <option value="people">People</option>
+          <option value="planets">Planets</option>
+          <option value="starships">Starships</option>
+        </select>
+        <button id="submit-btn">Get Info</button>
+      </div>
+        
+        <br>
+
+        <div id="results-container"></div>
+        <br>
+        <p id="alert-msg">Please enter an id and select a category</p>
+    </div>
+
+      <script src="./swapi-ajex.js"></script>
+</body>
+</html>
